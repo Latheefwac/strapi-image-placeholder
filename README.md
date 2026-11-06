@@ -46,9 +46,9 @@ The plugin does two things at `register` time:
 ### From npm
 
 ```bash
-npm install @latheefwac/strapi-image-placeholder
+npm install strapi-media-image-placeholder
 # or
-yarn add @latheefwac/strapi-image-placeholder
+yarn add strapi-media-image-placeholder
 ```
 
 Strapi auto-discovers it (the package declares `strapi.name: "image-placeholder"`),
