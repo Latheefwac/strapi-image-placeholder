@@ -1,6 +1,6 @@
 {
   "name": "strapi-image-placeholder",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adds a custom editable description field to Strapi media files and shows declared required image sizes as hints on media fields. Works with Strapi v4 and v5, JavaScript and TypeScript.",
   "keywords": [
     "strapi",
