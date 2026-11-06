@@ -1,0 +1,69 @@
+{
+  "name": "strapi-image-placeholder",
+  "version": "1.0.0",
+  "description": "Adds a custom editable description field to Strapi media files and shows declared required image sizes as hints on media fields. Works with Strapi v4 and v5, JavaScript and TypeScript.",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "plugin",
+    "media",
+    "media-library",
+    "upload",
+    "image",
+    "placeholder",
+    "description",
+    "alt-text",
+    "required-size",
+    "strapi-v4",
+    "strapi-v5"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Akash",
+    "email": "meakash04@gmail.com"
+  },
+  "main": "strapi-server.js",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "source": "./strapi-server.js",
+      "import": "./strapi-server.js",
+      "require": "./strapi-server.js",
+      "default": "./strapi-server.js"
+    },
+    ".": "./strapi-server.js"
+  },
+  "files": [
+    "strapi-server.js",
+    "server",
+    "admin",
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./test/smoke.js"
+  },
+  "strapi": {
+    "name": "image-placeholder",
+    "displayName": "Image Placeholder",
+    "description": "Adds a custom editable description field to media files.",
+    "kind": "plugin"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0 || ^5.0.0"
+  }
+}
